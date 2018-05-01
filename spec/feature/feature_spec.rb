@@ -15,4 +15,13 @@ describe Battle, type: :feature do
       expect(page).to have_content("Rogi's HP: 100")
     end
   end
+
+  describe 'Player 1 attacks player and gets a confirmation', type: :feature do
+    it 'allows Player 1 to attack & provides a confirmation of attack' do
+      sign_in_and_play
+      click_on(class: 'player1_attack_button')
+      expect(page).to have_content('Igor has attacked Rogi')
+    end
+
+  end
 end
