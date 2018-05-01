@@ -1,5 +1,5 @@
 require './app'
-
+require './spec/feature/web_helpers'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
